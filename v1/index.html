@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ants!</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+	<div id="game">
+		<div class="header"><H1>Ants!</H1>Colony Food: <span id="food">0</span> Ants: <span id="ants">0</span> Pheromone: <span id="ph">0</span> Time: <span id="timer"><time>00:00:00</time></span></div>
+		<div class="toolbar">
+			<h2>TOOLS</h2>
+			<div class="drawMode">
+				<button title="Add Ants" id="antButton" class="active"></button>
+				<button title="Lay Pheromone Trails" class="trailIcon" id="trailButton"></button>
+				<button title="Add Food" id="foodButton"></button>
+				<button title="Squish Ants" class="fingerIcon" id="SquishButton"></button>
+				<button title="Draw Barriers" id="barrierButton"></button>
+			</div>
+			<h2>SHOW</h2>
+			<div class="playControls">
+				<button title="Toggle Trails" class="active trailIcon" id="showTrailsButton"></button>
+				<button title="Toggle Health Bars" class="healthbarIcon" id="showHealthButton"></button>
+			</div>
+			<h2>PAUSE</h2>
+			<div class="playControls">
+				<button title="Play/Pause" class="pauseIcon" id="pauseButton"></button>
+			<!--<button id="stepButton">></button>-->
+			</div>
+		</div>	
+		<div id="tilesDrawer">
+			
+		</div>
+		<img id="hill" src="img/hill.png">
+		<canvas id="canvas" width="890" height="700"></canvas>
+		<canvas id="overlaycanvas" width="890" height="700"></canvas>
+		<canvas id="barriercanvas" width="890" height="700"></canvas>
+		<canvas id="foodcanvas" width="890" height="700"></canvas>
+		<div class="gameover">
+			<h1>Game Over</h1>
+			<h2>All your ants died!</h2>
+			<p>Your Colony lasted <span id="finalTime">0</span>.</p>
+			<p>The most effient ant was <span id="efficientAntName"></span> who walked an average of <span id="efficientDistance"></span>mm to bring food home.</p>
+			<p>At it's peak, your colony had <span id="maxAnts"></span> ants.</p>
+		</div>
+	</div>
+	<div class="footer">&copy 2015 Joel Schulbach</div>
+	<div id="debug"></div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2968220-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

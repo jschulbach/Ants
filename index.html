@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ants!</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+	<div id="game" class='bg'>
+		<div id="titleScreen"><img id="logo" src="./img/logo.png" /><br><button id="survivalmode">Survival mode</button><button id="sandboxmode">Sandbox mode</button><div class="version">v 0.2</div></div>
+		<div class="header"><H1>Ants!<div class="version">v 0.2</div></H1>Colony Food: <span id="food">0</span> Ants: <span id="ants">0</span> Pheromone: <span id="ph">0</span> Time: <span id="timer"><time>00:00:00</time></span></div>
+		<div class="toolbar hideleft">
+			<h2>TOOLS</h2>
+			<div class="drawMode">
+				<button title="Add Ants" id="antButton" class="active"></button>
+				<button title="Lay Pheromone Trails" class="trailIcon" id="trailButton"></button>	
+				<button title="Squish Ants" class="fingerIcon" id="SquishButton"></button>
+				<button title="Add Food" id="foodButton"></button>
+				<button title="Draw Barriers" id="barrierButton"></button>
+				<button title="Erase Food & Barriers" class="eraserIcon" id="eraserButton"></button>
+			</div>
+			<h2>SHOW</h2>
+			<div class="playControls">
+				<button title="Toggle Trails" class="active trailIcon" id="showTrailsButton"></button>
+				<button title="Toggle Ground" class="groundIcon" id="showGroundButton"></button>
+			</div>
+			<h2>CONTROL</h2>
+			<div class="playControls">
+				<button title="Play/Pause" class="pauseIcon" id="pauseButton"></button>
+				<button title="Config" class="configIcon" id="configButton"></button>
+			<!--<button id="stepButton">></button>-->
+			</div>
+		</div>	
+		<div id="tilesDrawer" class="hideright">
+			
+		</div>
+		<div id="scrollContainer">
+			<img id="hill" src="img/hill.png">
+			<canvas id="canvas" width="890" height="700"></canvas>
+			<canvas id="overlaycanvas" width="890" height="700"></canvas>
+			<canvas id="barriercanvas" width="890" height="700"></canvas>
+			<canvas id="foodcanvas" width="890" height="700"></canvas>
+		</div>
+		<div id="config">
+			<h1>Settings</h1>
+			<hr>
+			<h2>Pre-Game Options</h2>
+			<label>Initial Colony Population</label>
+			<input id="initial_population" type="text" value='15'><span class="rangeBound">(0 ~ 1,000)</span><br>
+			<label>Initial Colony Food</label>
+			<input id="initial_colony_food" type="text" value='20'><span class="rangeBound">(0+)</span><br>
+			<label>Map Food</label>
+			<input id="initial_map_food" type="text" value='40'><span class="rangeBound">(0+)</span><br>
+			
+			<hr>
+			<h2>In-Game Options</h2>
+			<label>Ant Max Energy</label>
+			<input id="max_energy" type="text" value='10000'><span class="rangeBound">(10 - 100,000)</span><br>
+			<label>Food Growth Delay</label>
+			<input id="food_growth_rate" type="text" value='20'><span class="rangeBound">(1 - 1,000)</span><br>
+			<label>Dizzy</label>
+			<input id="dizziness" type="text" value='4'><span class="rangeBound">(0 - 100)</span><br>
+			<label>Chance to turn</label>
+			<input id="chance_turn" type="text" value="14"><span class="rangeBound">(0 - 100%)</span><br>
+			<label>Chance to turn on a trail</label>
+			<input id="chance_turn_on_trail" type="text" value="7"><span class="rangeBound">(0 - 100%)</span><br>
+			<label>Chance to turn carrying food</label>
+			<input id="chance_turn_food" type="text" value='3'><span class="rangeBound">(0 - 100%)</span><br>
+			<button id="sandbox_start">Start</button><button style="display: none;" id="sandbox_close">Close</button>
+		</div>
+		<div class="gameover">
+			<h1>Game Over</h1>
+			<h2>All your ants died!</h2>
+			<p>Your Colony lasted <span id="finalTime">0</span>.</p>
+			<p>The most effient ant was <span id="efficientAntName"></span> who walked an average of <span id="efficientDistance"></span>mm to bring food home.</p>
+			<p>At it's peak, your colony had <span id="maxAnts"></span> ants.</p>
+		</div>
+	</div>
+	<div class="footer">&copy 2015 Joel Schulbach</div>
+	<div id="debug"></div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2968220-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
