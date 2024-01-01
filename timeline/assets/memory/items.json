@@ -1,0 +1,7 @@
+[
+    {"id": "b6afeea4-e412-4832-979b-737f02a68a22","name": "30 pin Simm", "releaseDate": "1982-1-1"},
+    {"id": "3cfb1198-a857-43a3-b303-0f2cdeb3a35c","name": "72 pin Simm", "releaseDate": "1991-1-1"},
+    {"id": "a24f40a5-20d3-457e-bea4-7871dacb68ef","name": "DDR", "releaseDate": "1998-1-1"},
+    {"id": "25a668b2-afee-4f53-ac3f-4b2111a01c10","name": "DDR2", "releaseDate": "2003-1-1"},
+    {"id": "f6f7c287-0f5c-4519-924e-a2aefedff75b","name": "DDR3", "releaseDate": "2007-1-1"}
+]

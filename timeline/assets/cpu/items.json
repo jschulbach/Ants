@@ -1,0 +1,14 @@
+[
+    {"id": "d6537154-43c3-4f5c-bb9c-f5e508b29a04", "name": "Intel 8080", "releaseDate": "1974-1-1", "endOfLifeDate": "1990-1-1"},
+    {"id": "921e04d9-74cf-4651-b3cf-69ad2ba94349", "name": "MOS 6502", "releaseDate": "1975-1-1", "endOfLifeDate": "2010-1-1"},
+    {"id": "ba52aa66-0507-4fe2-9c8c-9ed3ed0994d4", "name": "Intel 286", "releaseDate": "1982-1-1", "endOfLifeDate": "1991-1-1"},
+    {"id": "f24c4b71-31b9-4f37-8c19-3eb12bc42a6c", "name": "Intel 386", "releaseDate": "1985-1-1", "endOfLifeDate": "2007-1-1"},
+    {"id": "57002673-0282-4541-aed7-b393604f37c9", "name": "Intel 486", "releaseDate": "1989-1-1", "endOfLifeDate": "2007-1-1"},
+    {"id": "de97648a-ab4c-424f-88f9-3a11996d247c", "name": "Intel Pentium", "releaseDate": "1993-3-22"},
+    {"id": "b0fe258a-63b7-436f-849e-e3e1aef5612e", "name": "Intel Pentium II", "releaseDate": "1997-5-1"},
+    {"id": "aba6661e-779f-45da-9861-9421e2015b4e", "name": "Intel Pentium III Katmai", "releaseDate": "1999-2-1"},
+    {"id": "95689109-6ed0-4629-9e9f-d1208605fa79", "name": "Intel Pentium III Coppermine", "releaseDate": "1999-10-1"},
+    {"id": "2ee78adf-4fe4-43b9-bf78-324478b5f1de", "name": "Intel Pentium III Tualatin", "releaseDate": "2001-7-1"},
+    {"id": "efef1bde-bcd9-4d0e-a036-a4e78b3c7605", "name": "Intel Pentium IV Willamette", "releaseDate": "2000-11-1"},
+    {"id": "69c9ceb3-97d1-49ee-bec9-e7ceed3cdec3", "name": "Intel Pentium IV Northwood", "releaseDate": "2002-1-1"}
+]

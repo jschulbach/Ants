@@ -1,0 +1,9 @@
+[
+    {"id": "2b117701-2c05-4964-ab5f-fc0fad09e154", "name": "Apple II", "releaseDate": "1977-1-1", "endOfLifeDate": "1993-1-1"},
+    {"id": "76cf56e5-1246-401d-a372-18a1a2c7b0ff", "name": "Vic-20", "releaseDate": "1981-1-1", "endOfLifeDate": "1985-1-1"},
+    {"id": "daccbf41-cdd6-4b13-89ee-73dc616a4ab8", "name": "Commodore PET", "releaseDate": "1977-1-1", "endOfLifeDate": "1982-1-1"},
+    {"id": "d55f8f39-21f5-4c2c-ac13-3613f4f59555", "name": "Commodore 64", "releaseDate": "1982-1-1", "endOfLifeDate": "1994-1-1"},
+    {"id": "90924f92-1dda-428f-95c8-9ae5be7bf5b6", "name": "Commodore 128", "releaseDate": "1985-1-1", "endOfLifeDate": "1989-1-1"},
+    {"id": "14c552d6-a9d5-44f1-9442-01ae13d5cb06", "name": "Nabu", "releaseDate": "1982-1-1", "endOfLifeDate": "1985-1-1"},
+    {"id": "ef0a425c-f0dd-4301-b58e-36ed3102b569", "name": "Mac SE", "releaseDate": "1987-3-1", "endOfLifeDate": "1990-10-1"}
+]
